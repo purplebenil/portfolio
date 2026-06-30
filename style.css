@@ -61,7 +61,7 @@ body {
   font-size: 22px;
   padding: 6px 12px;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: pointer;A
 }
 
 .container {
@@ -135,17 +135,28 @@ body {
   text-align: center;
 }
 
-.avatar {
+.avatar,
+.profile-image {
   width: 110px;
   height: 110px;
   margin: 0 auto 18px;
   border-radius: 50%;
+}
+
+.avatar {
   background: #2563eb;
   color: white;
   display: grid;
   place-items: center;
   font-size: 34px;
   font-weight: bold;
+}
+
+.profile-image {
+  display: block;
+  object-fit: cover;
+  border: 4px solid #e8f0ff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
 }
 
 .section {
