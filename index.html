@@ -64,50 +64,29 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>AI Survey Service</h2>
-      <div class="service-card">
-        <div>
-          <p class="eyebrow">Featured Project</p>
-          <h3>AI-Powered Survey Assistant</h3>
-          <p>
-            This service helps users create survey questions, collect responses,
-            and summarize results with simple AI-assisted insights.
-          </p>
-        </div>
-
-        <div class="service-features">
-          <div>
-            <strong>Question Builder</strong>
-            <span>Generate clear survey questions based on a topic.</span>
-          </div>
-          <div>
-            <strong>Response Summary</strong>
-            <span>Organize answers into easy-to-read insights.</span>
-          </div>
-          <div>
-            <strong>Simple Dashboard</strong>
-            <span>Show participation and key results at a glance.</span>
-          </div>
-        </div>
-
-        <form class="survey-form" id="surveyForm">
-          <label for="surveyName">Name</label>
-          <input id="surveyName" name="name" type="text" placeholder="Your name" required />
-
-          <label for="surveyEmail">Email</label>
-          <input id="surveyEmail" name="email" type="email" placeholder="you@example.com" required />
-
-          <label for="surveyTopic">Survey Topic</label>
-          <input id="surveyTopic" name="topic" type="text" placeholder="Customer feedback" required />
-
-          <label for="surveyQuestion">Question</label>
-          <textarea id="surveyQuestion" name="question" rows="4" placeholder="What question do you want to ask?" required></textarea>
-
-          <button class="btn primary" type="submit">Send to Make</button>
-          <p class="form-message" id="surveyMessage" role="status"></p>
-        </form>
+        <section class="ai-service-section" id="ai-survey">
+      <div class="ai-service-copy">
+        <p class="eyebrow">AI Survey Service</p>
+        <h2>Ask My AI Agent</h2>
+        <p>
+          Leave your question below. The AI agent will review your message and
+          send a response to your email address.
+        </p>
       </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="visitorName">Name</label>
+        <input type="text" id="visitorName" placeholder="&#51060;&#47492;" required>
+
+        <label for="visitorEmail">Email</label>
+        <input type="email" id="visitorEmail" placeholder="&#51060;&#47700;&#51068;" required>
+
+        <label for="visitorMessage">Question</label>
+        <textarea id="visitorMessage" placeholder="AI &#50640;&#51060;&#51204;&#53944;&#50640;&#44172; &#54624; &#51656;&#47928;&#51012; &#51077;&#47141;&#54616;&#49464;&#50836;" required></textarea>
+
+        <button type="submit">AI &#50640;&#51060;&#51204;&#53944;&#50640;&#44172; &#51656;&#47928;&#54616;&#44592;</button>
+        <div id="responseMessage" class="response-message" aria-live="polite"></div>
+      </form>
     </section>
   </main>
 
